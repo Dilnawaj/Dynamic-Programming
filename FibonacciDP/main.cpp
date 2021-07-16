@@ -29,7 +29,9 @@ int main()
 {
     int n;
     cin>>n;
-    int dp[100]={0};
+    int *dp = new int[n]{0};
+    //Creating dynamic array is better than giving size of 100 :)
+    //int dp[100]={0};
     cout<<"Top down "<<fib(n,dp)<<endl;
     cout<<"Bottom up "<<fibb(n)<<endl;
     return 0;
